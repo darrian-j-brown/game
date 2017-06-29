@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <script>
+    function visitPage(){
+        window.location='index.html';
+    }
+</script>
+<button onclick="visitPage();">Main Menu</button>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <style>
+  
+  button{
+      color: red;
+      border-radius: 50px;
+      background-color: black;
+      border-color: gray;
+      
+    }  
+    
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    .container{
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .btn {
+      padding: 10px 15px;
+      background-color: #8B0000;
+      border-radius: 4px;
+      color:#fff;
+      border: none;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .popup {
+      width: 400px;
+      height: 180px;
+      background-color: transparent;
+      border-radius: 4px;
+      display: none;
+      margin: 0 auto;
+      z-index: 1000;
+      position: relative
+      
+      
+    }
+    p{
+      font-size: 20px;
+      line-height: 100px;
+      color: red;
+      
+    }
+    .options{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+    #close{
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 25px;
+        border-radius: 50%;
+        cursor: pointer;
+        float: right;
+        color: #000000;
+        border: 2px solid #000000;
+    }
+    
+    a{
+      text-transform: uppercase;
+      text-decoration: none;
+        color: #8B0000;
+      text-align: center;
+      padding: 15px 0px;
+    }
+    .cover{
+        width:100%;
+        height: 100%;
+        position: absolute;
+        display: none;
+        z-index: 999;
+        background-color: rgba(0, 0, 0, 0.5);
+        top: 0;
+        left: 0;
+    }
+    /*transparent????*/
+    a:first-child{
+      float: left;
+      width:50%;
+      background-color: #000000;
+      border-radius: 2px;
+    }
+    a:last-child{
+      float: left;
+      width: 50%;
+      background-color:  #808080;
+      border-radius: 2px;
+
+    }
+     body{
+    background-image:url("http://creeklinehouse.com/wp-content/uploads/2012/10/5spooky1.jpg");
+     background-size: 100%;
+    background-repeat: no-repeat;
+  }
+    
+        
+  </style>
+  
+  <meta charset="utf-8">
+  <title> Alert Popups </title>
+</head>
+<body>
+
+  <div class="container">
+    <button class="btn">*phone*</button>
+    <div class="popup">
+        <span id="close">&times;</span>
+      <p> ..... </p>
+      <div class="options">
+        <a href="path9.html">*Continue*</a> 
+          </div>
+         </div>
+      </div>
+      <!--below might need to be deleted-->
+  <script scr="../js/jquery.js"></script>
+  <script>
+      $(document).ready(function() {
+        
+            $(".cover").fadeIn('slow');
+            $(".popup").fadeIn('slow');
+      
+        $(".popup").on('click', function(){
+         if($(event.target).is("#close")){
+             $(".cover").fadeOut('slow');
+            $(".popup").fadeOut('slow');
+         }   
+        });
+      });
+  </script>
+</body>
+</html>

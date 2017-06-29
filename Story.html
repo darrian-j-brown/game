@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+  <script>
+    function visitPage(){
+        window.location='index.html';
+    }
+</script>
+<button onclick="visitPage();">Back</button>
+
+  <style>
+  
+  
+  
+   body{
+    background-image:url("/evilGrandpa.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  
+    button{
+      color: red;
+      border-radius: 50px;
+      background-color: black;
+      width: 100px;
+      height: 60px;
+      border-color: gray;
+      padding: 10px;
+      
+    }
+    p{
+     background-color: gray;
+    width: 555px;
+    border: 5px solid red;
+    padding: 25px;
+    margin: 200px;
+    color: #8B0000;
+    
+    }
+  </style>
+  
+  
+</head>
+<body>
+  <p>It was around maybe eleven o'clock at night, the night was soundless aside from the TV I had on. I was flipping the channels looking for something to watch this late at night, usually all there is to watch are old reruns of older shows that don't really interest me. I left the TV on channel 9, the cartoon channel. My parents had gone out to dinner because it was their anniversary, today was perhaps the only day I'd get to actually stay up late. I was all alone in the house, with nothing but my TV to keep me company. 
+	I live in a two story house with a basement. In The first floor we have the kitchen, the living room, and a bathroom. The basement was exactly that, a basement, just a storage room. On the second floor was my parent's room, my room, and lastly the room that belonged to my Grandfather before he passed away. He passed away while I was a child, so I never really got to meet him. My parents say that in his final days he became increasingly delusional, to the point where he believed that he was in war and that my parents were out to kill him. Ever since I was a little kid I always hear sounds coming from inside the room, my parents never let me open the door but they never deny hearing those sounds. The sounds were like scratching and kicking at the walls. It was like someone was inside always doing something, occasionally you could hear heavy breathing through the walls and the door too.
+	Today is the first time my parents left me alone at the house, they figure a ten year-old wouldn't need a babysitter anymore. I liked the idea at first, not needing a babysitter I mean. I could stay up as late as I wanted, eat all the candy I wanted, and my parents wouldn't know. But it only dawned on me now that I was alone in the house with whatever is inside Grandpa's room...
+</p>
+<audio loop autoplay id="Piano">
+<source src="/Creepy Piano Loop.mp3" type="audio/mpeg">
+
+</audio>
+
+<script scr="../js/jquery.js"></script>
+  <script>
+       $(document).ready(function() {
+    $('#Piano').fadeIn(2000);
+        }); /* and this */
+
+</script>
+
+</body>
+</html>
